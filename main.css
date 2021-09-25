@@ -1,0 +1,295 @@
+.section-search input {
+    padding: 5px !important;
+    font-size: 18px !important;
+    width: 90% !important;
+    border: #3d6b08 3px solid !important;
+}
+
+.section-follow .fa-4x {
+    margin: 5px 10px;
+}
+
+body,
+html {
+    margin-right: 15px;
+    margin-left: 15px;
+    font-family: "Poppins", "Lora", sans-serif;
+}
+
+. {
+    box-sizing: border-box;
+}
+
+.caption {
+    top: 40% !important;
+}
+
+/*******************************************navbar*****************************************************/
+
+.nav-wrapper a:hover {
+    text-decoration: none;
+}
+
+/******************************************Rólunk hasábok**********************************************/
+
+.rolunk-sor {
+    display: flex;
+    max-width: 100%;
+}
+
+.hasab {
+    width: 100%;
+    margin: 20px 60px;
+    text-align: justify;
+}
+
+.hasab-szoveg {
+    font-size: 1em;
+    line-height: 2em;
+}
+
+/***************************************üzleti szemlélet szöveg****************************************/
+
+.uzleti-szoveg {
+    line-height: 2em;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/***************************************vásárlás menete szöveg****************************************/
+
+.szovegek {
+    line-height: 2em;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/*************************************térkép**********************************************************/
+
+.contact-map iframe {
+    width: 100%;
+}
+
+/************************************Reszponzív galéria***********************************************/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 20%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#termekek p {
+    font-size: 0.6em;
+    margin-top: 0.6em;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1200px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    p {
+        line-height: 0.4em;
+        font-size: 1.2em;
+    }
+
+    .hasab {
+        margin: 10px 20px;
+    }
+
+    .parallax-container {
+        height: 300px;
+    }
+    .text {
+        font-weight: 500;
+        color: black;
+        font-size: 1.9em;
+    }
+    #kave {
+        font-size: 1.6em;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    p {
+        line-height: 0.2em;
+    }
+    .rolunk-sor {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .hasab-szoveg {
+        margin: 5px 20px;
+    }
+
+    .parallax-container {
+        height: 250px;
+    }
+
+    footer a {
+        font-size: 0.7rem;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 550px) {
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    p {
+        line-height: 0.1em;
+        font-size: 0.9em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+    .parallax-container {
+        height: 150px;
+    }
+
+    .rolunk-sor {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hasab-szoveg {
+        margin: 0px 5px;
+        padding: 0;
+        line-height: 2em;
+        font-size: 1em;
+    }
+    .hasab {
+        margin: 10px 10px;
+    }
+    .text p {
+        font-size: 1.3em;
+    }
+    .text {
+        font-weight: 500;
+        color: black;
+        font-size: 1.9em;
+    }
+
+    #natur {
+        font-size: 1.3em;
+    }
+
+    body,
+    html {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /*a képeken a hover szöveg*/
+    p {
+        margin: 0;
+        padding: 0;
+        line-height: 1em;
+        color: black;
+    }
+    .hasab {
+        margin: 10px 20px;
+    }
+
+    .text {
+        font-weight: 500;
+        color: black;
+        font-size: 1.3em;
+    }
+    #edes,
+    #fuszer {
+        font-size: 0.9em;
+    }
+
+    footer h6 {
+        font-size: 0.7rem;
+    }
+    .documents {
+        font-size: 0.7rem;
+    }
+
+    .footer-copyright {
+        font-size: 0.7rem;
+    }
+}
+
+/*********************************eddig tartott a galéria létrehozása*****************************/
+
+/***************************************A termékképek és a hover**********************************/
+
+.container-img {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+h5 {
+    font-weight: 900;
+    margin: 0;
+}
+
+.middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 1.2em;
+    width: 100%;
+}
+
+.container-img:hover .image {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.container-img:hover .middle {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.card-panel {
+    margin: 0;
+}
